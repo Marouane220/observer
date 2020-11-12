@@ -9,7 +9,6 @@ public class ObserverPatternDemo {
 		OctaObserver octa_observer = new OctaObserver(observable);
 		
 		observable.addObserver(bin_observer);
-		observable.setState(0);
 		observable.run();
 		bin_observer.getState();
 		hexa_observer.getState();
