@@ -24,7 +24,6 @@ public class OctaObserver implements Observer{
 	public void update(Observable obs, Object state) {
 		// TODO Auto-generated method stub
 	    if (obs instanceof Subject) {
-	    	Subject sujet = (Subject) obs;
 	    	System.out.println("La valeur du compteur en octal est " + Integer.toOctalString((int) state)+ "\n");
         }
 	}
