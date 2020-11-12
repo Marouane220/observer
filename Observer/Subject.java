@@ -22,7 +22,8 @@ public class Subject extends Observable {
 		try {
 			while (!Thread.currentThread().isInterrupted()) {
 				this.setState((this.getState() + 1) % 60);
-				Thread.sleep(2000);
+				System.out.println("****************");
+				Thread.sleep(1000);
 			}
 		} catch (InterruptedException e) {
 			}
