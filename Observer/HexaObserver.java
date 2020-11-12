@@ -24,7 +24,6 @@ public class HexaObserver implements Observer{
 	public void update(Observable obs, Object state) {
 		// TODO Auto-generated method stub
 	    if (obs instanceof Subject) {
-	    	Subject sujet = (Subject) obs;
 	    	System.out.println("La valeur du compteur en hexadecimal est " + Integer.toHexString((int) state)+ "\n");
         }
 	}
